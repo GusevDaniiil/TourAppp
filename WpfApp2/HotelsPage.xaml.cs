@@ -67,7 +67,7 @@ namespace WpfApp2
         {
             if (Visibility == Visibility.Visible)
             {
-                ToursBaseEntities.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
+                
                 DGridHotels.ItemsSource = ToursBaseEntities.GetContext().Hotel.ToList();
             }
         }
